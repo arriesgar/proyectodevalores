@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Estudiantes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .team .member {
+            flex: 1 1 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        .team img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .publication {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            background-color: white;
+        }
+        .publication img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proyecto de Estudiantes</h1>
+    </header>
+    <nav>
+        <a href="#proyecto">El Proyecto</a>
+        <a href="#equipo">Nuestro Equipo</a>
+        <a href="#publicacion">Publicación Reciente</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="proyecto" class="section">
+            <h2>El Proyecto</h2>
+            <p>Descripción del proyecto que están llevando a cabo los estudiantes. Aquí puedes incluir detalles sobre el objetivo del proyecto, la metodología utilizada, y los resultados esperados.</p>
+            <img src="ruta-de-la-imagen-del-proyecto.jpg" alt="Imagen del Proyecto">
+        </section>
+        <section id="equipo" class="section">
+            <h2>Nuestro Equipo</h2>
+            <div class="team">
+                <div class="member">
+                    <img src="ruta-de-la-imagen-del-miembro1.jpg" alt="Miembro del Equipo 1">
+                    <h3>Nombre del Miembro 1</h3>
+                    <p>Rol del Miembro 1</p>
+                </div>
+                <div class="member">
+                    <img src="ruta-de-la-imagen-del-miembro2.jpg" alt="Miembro del Equipo 2">
+                    <h3>Nombre del Miembro 2</h3>
+                    <p>Rol del Miembro 2</p>
+                </div>
+                <div class="member">
+                    <img src="ruta-de-la-imagen-del-miembro3.jpg" alt="Miembro del Equipo 3">
+                    <h3>Nombre del Miembro 3</h3>
+                    <p>Rol del Miembro 3</p>
+                </div>
+                <div class="member">
+                    <img src="ruta-de-la-imagen-del-miembro4.jpg" alt="Miembro del Equipo 4">
+                    <h3>Nombre del Miembro 4</h3>
+                    <p>Rol del Miembro 4</p>
+                </div>
+                <div class="member">
+                    <img src="ruta-de-la-imagen-del-miembro5.jpg" alt="Miembro del Equipo 5">
+                    <h3>Nombre del Miembro 5</h3>
+                    <p>Rol del Miembro 5</p>
+                </div>
+            </div>
+        </section>
+        <section id="publicacion" class="section">
+            <h2>Publicación Reciente</h2>
+            <div class="publication">
+                <h3>Título de la Publicación</h3>
+                <p>Descripción breve de la publicación. Aquí los estudiantes pueden compartir sus hallazgos más recientes, noticias o cualquier actualización relacionada con el proyecto.</p>
+                <img src="ruta-de-la-imagen-de-la-publicacion.jpg" alt="Imagen de la Publicación">
+            </div>
+        </section>
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Proyecto de Estudiantes</p>
+    </footer>
+</body>
+</html>
